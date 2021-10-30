@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+const float pi = 3.1416;
+
+float volume(float radius, float height)
+{
+    return (pi*radius*radius*height);
+}
+
+int main()
+{
+    float radius, height;
+
+    printf("Enter the radius of a cylinder: ");
+    scanf("%d", &radius);
+
+    printf("Enter the height of a cylinder: ");
+    scanf("%d", &height);
+
+    float volumeOfCylinder = volume(radius, height);
+
+    printf("The volume of a cylinder: %.2f\n", volumeOfCylinder);
+
+    return 0;
+}
